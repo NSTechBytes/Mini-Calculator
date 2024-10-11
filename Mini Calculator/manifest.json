@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Mini Calculator",
+  "version": "854.0",
+  "description": "Solve the problems with this mini tool.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/images/icon.png",
+      "48": "assets/images/icon.png",
+      "128": "assets/images/icon.png"
+    }
+  },
+  "permissions": [
+    "clipboardWrite",
+    "storage"
+  ],
+  "icons": {
+    "16": "assets/images/icon.png",
+    "48": "assets/images/icon.png",
+    "128": "assets/images/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["welcome.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "assets/js/background.js"
+  }
+}

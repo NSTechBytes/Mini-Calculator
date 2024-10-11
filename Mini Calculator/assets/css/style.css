@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Calculator container */
+  .calculator {
+    width: 280px;
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+  }
+  
+  /* Display screen */
+  #display {
+    width: 90%;
+    height: 60px;
+    background-color: #1a252f;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  /* Button styling */
+  button {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #333, #222);
+    color: #eee;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(145deg, #444, #333);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Special button styling */
+  button.operator {
+    background: linear-gradient(145deg, #ff5722, #e64a19);
+  }
+  
+  button.operator:hover {
+    background: linear-gradient(145deg, #ff7043, #f4511e);
+  }
+  
+  button.clear {
+    background: linear-gradient(145deg, #e74c3c, #c0392b);
+  }
+  
+  button.clear:hover {
+    background: linear-gradient(145deg, #e57373, #d32f2f);
+  }
+  
+  /* Equal button */
+  button#btnEqual {
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
+  }
+  
+  button#btnEqual:hover {
+    background: linear-gradient(145deg, #58d68d, #2ecc71);
+  }
+  
+  /* Layout grid for buttons */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
